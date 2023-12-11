@@ -1,0 +1,4 @@
+flask
+pandas
+jinja2
+apscheduler
