@@ -52,7 +52,7 @@ def allocate_task(prolific_id, session_id):
                                    (prolific_id, datetime.utcnow(), session_id, task_id))
                     conn.commit()
                     return task_id, task_number
-            return None
+            return None, -1
 
     except sqlite3.Error as e:
         # Consider logging the error
