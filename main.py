@@ -129,7 +129,7 @@ def study():
     if task_id is None:
         return "No tasks available", 400
 
-    html_content = preprocess_html(html_content, df.iloc[[task_number]], task_id) # Params: html_content, df, task_id=-1
+    html_content = preprocess_html(html_content, df.iloc[[task_number-1]], task_id) # Params: html_content, df, task_id=-1
     html_content += f'<input type="hidden" id="prolific_pid" name="prolific_pid" value="{prolific_pid}">\n'
     html_content += f'<input type="hidden" id="session_id" name="session_id" value="{session_id}">\n'
     html_content += f'<input type="hidden" id="study_id" name="study_id" value="{session_id}">\n'
