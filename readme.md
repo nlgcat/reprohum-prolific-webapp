@@ -2,6 +2,7 @@
 # Flask Server for Prolific Tasks
 
 > This code is in development and has not been fully tested. Please use with caution.
+Please see the [additional notes file](https://github.com/nlgcat/reprohum-prolific-webapp/blob/main/additional_notes.md), containing thoughts/problems/solutions from using the app with prolific - feel free to contribute via PR if you have used the app.
 
 ## Required files:
 - data.csv - this is the datafile containing the rows of data for each task
