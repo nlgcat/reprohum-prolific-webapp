@@ -80,7 +80,7 @@ def expire_tasks(time_limit=3600):
         with create_connection() as conn:
             cursor = conn.cursor()
             # Get the current time
-            current_time = datetime.now()
+            current_time = datetime.utcnow()
             # Get the IDs of all allocated tasks
             cursor.execute("SELECT id, time_allocated FROM tasks WHERE status='allocated'")
             allocated_tasks = cursor.fetchall()
